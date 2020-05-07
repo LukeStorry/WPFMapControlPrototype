@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Microsoft.Maps.MapControl.WPF;
 
 namespace WPFMapControlPrototype
 {
@@ -23,6 +24,7 @@ namespace WPFMapControlPrototype
         public MainWindow()
         {
             InitializeComponent();
+            myMap.CredentialsProvider = new ApplicationIdCredentialsProvider(Environment.GetEnvironmentVariable("BING_MAPS_KEY"));
         }
     }
 }
