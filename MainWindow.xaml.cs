@@ -24,7 +24,10 @@ namespace WPFMapControlPrototype
         public MainWindow()
         {
             InitializeComponent();
-            myMap.CredentialsProvider = new ApplicationIdCredentialsProvider(Environment.GetEnvironmentVariable("BING_MAPS_KEY"));
+            myMap.CredentialsProvider =
+                new ApplicationIdCredentialsProvider(Environment.GetEnvironmentVariable("BING_MAPS_KEY"));
+            myMap.Center = new Location(51.444, -2.604);
+            myMap.ZoomLevel = 14;
         }
     }
 }

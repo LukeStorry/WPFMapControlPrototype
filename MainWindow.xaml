@@ -6,8 +6,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFMapControlPrototype"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="800" Width="1000">
     <Grid>
-        <m:Map x:Name="myMap" />
+        <m:Map x:Name="myMap"/>
     </Grid>
 </Window>
